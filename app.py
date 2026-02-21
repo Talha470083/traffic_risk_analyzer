@@ -1,15 +1,11 @@
-# ===============================
-# Streamlit App for Traffic Accident & Congestion Prediction
-# ===============================
-
 import streamlit as st
 import joblib
 import pandas as pd
 import numpy as np
-import os
+import os  # <-- keep this only once at the top
 
 # -------------------------------
-# Page config (MUST be first Streamlit command)
+# Page config
 # -------------------------------
 st.set_page_config(
     page_title="Traffic Accident & Congestion Predictor",
@@ -17,14 +13,9 @@ st.set_page_config(
 )
 
 # -------------------------------
-# Load model safely using joblib
+# Load model safely
 # -------------------------------
-import joblib
-import os
-
-# Get path relative to app.py
-MODEL_PATH = os.path.join(os.path.dirname(__file__),"model", "traffic_accident_model.pkl")
-
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "model", "traffic_accident_model.pkl")
 
 model = None
 if os.path.exists(MODEL_PATH):
