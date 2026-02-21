@@ -1,5 +1,6 @@
 pandas==2.1.1
-streamlit
 numpy
-matplotlib
 joblib
+streamlit
+scikit-learn
+matplotlib
