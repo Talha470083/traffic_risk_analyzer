@@ -19,7 +19,12 @@ st.set_page_config(
 # -------------------------------
 # Load model safely using joblib
 # -------------------------------
-MODEL_PATH = "C:\\Users\\User\\Desktop\\model\\traffic_accident_model.pkl"
+import joblib
+import os
+
+# Get path relative to app.py
+model_path = os.path.join(os.path.dirname(__file__),"model", "traffic_accident_model.pkl")
+
 
 model = None
 if os.path.exists(MODEL_PATH):
