@@ -1,0 +1,10 @@
+data/ 
+*.csv 
+data/ 
+*.csv 
+model/traffic_accident_model.joblib 
+model/traffic_accident_model.pkl 
+data/ 
+*.csv 
+model/traffic_accident_model.joblib 
+model/traffic_accident_model.pkl 
