@@ -1,5 +1,5 @@
 streamlit==1.26.0
 pandas==2.1.0
-numpy==1.25.0   # <-- match the version used to train the model
+numpy==2.4.0   # <-- match the version used to train the model
 scikit-learn==1.3.2
 joblib==1.3.2
